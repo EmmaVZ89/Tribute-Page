@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p{
+  padding: 20px;
+}
+ul{
+  list-style: none;
+}
+li{
+  padding: 5px;
+}
+body{
+  background: linear-gradient(45deg, lightblue, white, lightblue);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+#title{
+  font-size: 22px;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-align: center;
+}
+.img-div{
+  background-color: black;
+}
+#image{
+    height: auto;
+    max-width: 100%;
+    display: block;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+#img-caption{
+  font-family: monospace;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+ @media (max-width: 400px){
+    #img-caption{
+      font-size: 6px;
+   }
+  }
+#tribute-info{
+  font-size: 18px;
+text-align: justify;
+}
+#titlesawards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "awards titles"
+}
+@media (max-width: 400px){
+  #titlesawards{
+    grid-template-columns: auto;
+    grid-template-areas:
+    "titles"
+    "awards"
+  }
+}
+#awards{
+  grid-area: awards;
+
+}
+#titles{
+  grid-area: titles;
+}
+.dedication{
+  color: white;
+  background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
+}
